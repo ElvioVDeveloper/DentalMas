@@ -27,15 +27,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
           {/* Brand Information */}
           <div className="md:col-span-5 space-y-4">
-            {/* Logo completo dentro de una cápsula blanca */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white shadow-xs">
+            {/* Logo oficial dentro de cápsula blanca */}
+            <div className="bg-white rounded-2xl px-4 py-3 inline-flex shadow-xs">
               <img
-                src="/images/logo.png"
-                alt="Dentalmás - Clínica Odontológica Integral"
-                width={260}
-                height={76}
+                src="/images/logo-dentalmas.jpg"
+                alt="Dentalmás, Clínica Odontológica Integral. Tu sonrisa en las mejores manos"
                 loading="lazy"
-                className="h-8 sm:h-9 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
             </div>
             <p className="text-[15px] text-slate-300 max-w-sm leading-relaxed">
