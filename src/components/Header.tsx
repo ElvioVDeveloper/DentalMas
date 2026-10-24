@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Search, PhoneCall } from "lucide-react";
-import { CLINIC_INFO, NAV_ITEMS, getWhatsAppUrl } from "../data/content";
+import { CLINIC_INFO, NAV_ITEMS, PHONE_TEL, getWhatsAppUrl } from "../data/content";
 
 interface HeaderProps {
   onOpenSearch?: () => void;
@@ -124,7 +124,7 @@ export default function Header({ onOpenSearch }: HeaderProps) {
 
             {/* Quick Call on mobile - centralizado */}
             <a
-              href={`tel:${CLINIC_INFO.phonePrimaryTel}`}
+              href={`tel:${PHONE_TEL}`}
               aria-label="Llamar a la clínica"
               className="sm:hidden p-2 text-slate-600 hover:text-[#0B2A4A] rounded-full hover:bg-slate-100 transition-colors"
             >

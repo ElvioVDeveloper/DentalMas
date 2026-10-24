@@ -1,5 +1,5 @@
 import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
-import { CONTACT_CONTENT, CLINIC_INFO, getWhatsAppUrl } from "../data/content";
+import { CONTACT_CONTENT, CLINIC_INFO, PHONE_TEL, PHONE_DISPLAY, getWhatsAppUrl } from "../data/content";
 import FadeUp from "./FadeUp";
 
 export default function Contact() {
@@ -43,14 +43,10 @@ export default function Contact() {
                     <Phone className="w-5 h-5 stroke-[2]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-sm sm:text-base">Líneas de Atención</h3>
+                    <h3 className="font-bold text-white text-sm sm:text-base">Teléfono / WhatsApp</h3>
                     <p className="text-slate-200 text-sm sm:text-base leading-snug">
-                      <a href={`tel:${CLINIC_INFO.phonePrimaryTel}`} className="hover:text-white transition-colors">
-                        {CLINIC_INFO.phonePrimaryDisplay}
-                      </a>{" "}
-                      •{" "}
-                      <a href={`tel:${CLINIC_INFO.phoneSecondaryTel}`} className="hover:text-white transition-colors">
-                        {CLINIC_INFO.phoneSecondaryDisplay}
+                      <a href={`tel:${PHONE_TEL}`} className="hover:text-white transition-colors">
+                        {PHONE_DISPLAY}
                       </a>
                     </p>
                   </div>
@@ -67,6 +63,8 @@ export default function Contact() {
                       {CLINIC_INFO.schedule.weekdays}
                       <br />
                       {CLINIC_INFO.schedule.saturday}
+                      <br />
+                      {CLINIC_INFO.schedule.sunday}
                     </p>
                   </div>
                 </div>

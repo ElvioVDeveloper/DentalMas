@@ -15,12 +15,14 @@
  * Número de WhatsApp de la clínica.
  * FORMATO: Código de país (595 para Paraguay) seguido del número móvil SIN ceros,
  * SIN signos '+' y SIN espacios ni guiones.
- * Ejemplo: "595985123456"
+ * Ejemplo: "595985244551"
  * 
  * IMPORTANTE: Reemplaza este valor por el número oficial de Dentalmás cuando esté listo.
  */
 // TODO: reemplazar por dato real
-export const WHATSAPP_NUMBER = "595985123456";
+export const WHATSAPP_NUMBER = "595985244551";
+export const PHONE_DISPLAY = "+595 985 244 551";
+export const PHONE_TEL = "+595985244551";
 
 /**
  * Función auxiliar para generar el enlace directo de WhatsApp con mensaje precargado.
@@ -37,26 +39,20 @@ export const CLINIC_INFO = {
   // TODO: reemplazar por dato real
   address: "Juan León Mallorquín e/ Villarrica y 25 de Mayo, Encarnación, Paraguay",
   // TODO: reemplazar por dato real
-  phonePrimaryDisplay: "+595 71 204 890",
+  phonePrimaryDisplay: PHONE_DISPLAY,
   // TODO: reemplazar por dato real
-  phonePrimaryTel: "+59571204890",
-  // TODO: reemplazar por dato real
-  phoneSecondaryDisplay: "+595 985 123 456",
-  // TODO: reemplazar por dato real
-  phoneSecondaryTel: "+595985123456",
+  phonePrimaryTel: PHONE_TEL,
   phones: [
     // TODO: reemplazar por dato real
-    { display: "+595 71 204 890", tel: "+59571204890" },
-    // TODO: reemplazar por dato real
-    { display: "+595 985 123 456", tel: "+595985123456" },
+    { display: PHONE_DISPLAY, tel: PHONE_TEL },
   ],
   schedule: {
     // TODO: reemplazar por dato real
-    weekdays: "Lunes a Viernes: 08:00 - 19:30 hs",
+    weekdays: "Lunes a Viernes: 08:00 - 19:00 hs",
     // TODO: reemplazar por dato real
-    saturday: "Sábados: 08:00 - 13:00 hs",
+    saturday: "Sábados: 08:00 - 12:00 hs",
     // TODO: reemplazar por dato real
-    emergency: "Urgencias 24/7 con guardia médica activa",
+    sunday: "Domingos: Cerrado",
   },
   // TODO: reemplazar por dato real
   registration: "Habilitación MSPyBS N° 124/2022",
@@ -190,7 +186,7 @@ export const SERVICES_CONTENT = {
       id: "urgencias",
       title: "Urgencias Odontológicas",
       description:
-        "Respuesta inmediata para dolores agudos, fracturas dentales inesperadas o traumatismos bucales con guardia profesional activa.",
+        "Atención prioritaria para dolores agudos, fracturas dentales o traumatismos bucales. Escríbenos y te orientamos.",
       icon: "Emergency",
       linkText: "Línea directa de urgencia",
       whatsappMessage: "Hola Dentalmás, tengo una urgencia odontológica y necesito atención rápida.",
@@ -374,13 +370,13 @@ export const CONTACT_CONTENT = {
       icon: "MapPin",
     },
     {
-      title: "Líneas de Atención",
-      details: "+595 71 204 890 • +595 985 123 456",
+      title: "Teléfono / WhatsApp",
+      details: PHONE_DISPLAY,
       icon: "Phone",
     },
     {
       title: "Horarios de Atención",
-      details: "Lunes a Viernes: 08:00 - 19:30 hs\nSábados: 08:00 - 13:00 hs",
+      details: "Lunes a Viernes: 08:00 - 19:00 hs\nSábados: 08:00 - 12:00 hs\nDomingos: Cerrado",
       icon: "Clock",
     },
   ],
