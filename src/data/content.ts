@@ -311,6 +311,7 @@ export interface SpecialistItem {
   specialty: string;
   regNumber: string;
   image: string;
+  imagePosition?: string;
   whatsappMessage: string;
 }
 
@@ -321,37 +322,33 @@ export const SPECIALISTS_CONTENT = {
     "Profesionales certificados con formación continua y vocación de servicio para darte el mejor tratamiento en Paraguay.",
   doctors: [
     {
-      id: "dra-mariana-benitez",
-      name: "Dra. Mariana Benítez",
-      specialty: "Estética & Rehabilitación Oral",
-      regNumber: "Reg. Prof. 4.821 MSPyBS",
-      image: "/images/doctor-mariana.jpg",
-      whatsappMessage: "Hola, deseo agendar un turno con la Dra. Mariana Benítez en Dentalmás.",
+      id: "dr-osvaldo-irala",
+      name: "Dr. Osvaldo Irala",
+      specialty: "Implantes Dentales y Cirugía Oral",
+      regNumber: "", // TODO: completar con la matrícula real
+      image: "/images/dr-osvaldo-irala.jpg",
+      imagePosition: "center top",
+      whatsappMessage: "Hola, deseo agendar un turno con el Dr. Osvaldo Irala en Dentalmás.",
     },
     {
-      id: "dr-carlos-bogado",
-      name: "Dr. Carlos Bogado",
-      specialty: "Implantes & Cirugía Maxilofacial",
-      regNumber: "Reg. Prof. 3.910 MSPyBS",
-      image: "/images/doctor-carlos.jpg",
-      whatsappMessage: "Hola, deseo agendar un turno con el Dr. Carlos Bogado en Dentalmás.",
+      id: "dra-miyuki-izawa",
+      name: "Dra. Miyuki Izawa",
+      specialty: "Rehabilitación Oral Estética",
+      regNumber: "", // TODO: completar con la matrícula real
+      image: "/images/dra-miyuki-izawa.jpg",
+      imagePosition: "center top",
+      whatsappMessage: "Hola, quiero consultar por Rehabilitación Oral Estética y agendar un turno con la Dra. Miyuki Izawa en Dentalmás.",
     },
     {
-      id: "dra-valeria-duarte",
-      name: "Dra. Valeria Duarte",
-      specialty: "Ortodoncia & Ortopedia Dentofacial",
-      regNumber: "Reg. Prof. 5.120 MSPyBS",
-      image: "/images/doctor-valeria.jpg",
-      whatsappMessage: "Hola, deseo agendar un turno con la Dra. Valeria Duarte en Dentalmás.",
+      id: "dra-liceth-savaje",
+      name: "Dra. Liceth Savaje",
+      specialty: "Odontología General",
+      regNumber: "", // TODO: completar con la matrícula real
+      image: "/images/dra-liceth-savaje.jpg",
+      imagePosition: "center top",
+      whatsappMessage: "Hola, quiero agendar un turno de Odontología General con la Dra. Liceth Savaje en Dentalmás.",
     },
-    {
-      id: "dr-lucas-gimenez",
-      name: "Dr. Lucas Giménez",
-      specialty: "Odontopediatría & Prevención",
-      regNumber: "Reg. Prof. 6.304 MSPyBS",
-      image: "/images/doctor-lucas.jpg",
-      whatsappMessage: "Hola, deseo agendar un turno con el Dr. Lucas Giménez en Dentalmás.",
-    },
+    // TODO: agregar a la Dra. Gisselle Medina (Ortodoncia y Ortopedia Facial) cuando haya una foto de calidad.
   ] as SpecialistItem[],
 };
 
