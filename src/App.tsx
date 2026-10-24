@@ -23,7 +23,7 @@ export default function App() {
       {/* Main Content Sections */}
       <main className="flex-1 w-full">
         {/* 2. Hero Section */}
-        <Hero onOpenFacilitiesModal={() => setFacilitiesModalOpen(true)} />
+        <Hero />
 
         {/* 3. Services / Especialidades */}
         <Services />

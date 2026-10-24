@@ -1,10 +1,6 @@
-import { ArrowRight, Play, ShieldCheck, Users, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Users, Sparkles } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
 import { HERO_CONTENT, getWhatsAppUrl } from "../data/content";
-
-interface HeroProps {
-  onOpenFacilitiesModal?: () => void;
-}
 
 // Framer Motion animation variants for a smooth, high-end arrival
 const containerVariants: Variants = {
@@ -56,7 +52,7 @@ const bgImageVariants: Variants = {
   },
 };
 
-export default function Hero({ onOpenFacilitiesModal }: HeroProps) {
+export default function Hero() {
   return (
     <section
       id="inicio"
@@ -139,29 +135,17 @@ export default function Hero({ onOpenFacilitiesModal }: HeroProps) {
               {HERO_CONTENT.subtitle}
             </motion.p>
 
-            {/* Primary & Secondary Action Buttons (stack on mobile with 12px gap, 52px height) */}
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1"
-            >
+            {/* Primary Action Button: "Reservar turno" (full-width on mobile, min 52px height) */}
+            <motion.div variants={itemVariants} className="pt-1">
               <a
                 href={getWhatsAppUrl(HERO_CONTENT.floatingCard.prefilledMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center min-h-[52px] px-7 py-3.5 rounded-full text-base font-semibold text-white bg-[#0B2A4A] hover:bg-[#143C66] active:scale-98 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center min-h-[52px] px-8 py-3.5 rounded-full text-base font-semibold text-white bg-[#0B2A4A] hover:bg-[#143C66] active:scale-98 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 <span>{HERO_CONTENT.ctaPrimary}</span>
                 <ArrowRight className="w-4 h-4 ml-2 stroke-[2.2]" />
               </a>
-
-              <button
-                type="button"
-                onClick={onOpenFacilitiesModal}
-                className="inline-flex items-center justify-center min-h-[52px] px-6 py-3.5 rounded-full text-base font-semibold text-[#0B2A4A] bg-white border border-slate-200/80 hover:border-[#2BA89A] hover:text-[#2BA89A] active:scale-98 transition-all shadow-xs"
-              >
-                <Play className="w-4 h-4 mr-2 text-[#2BA89A] fill-[#2BA89A]/15" />
-                <span>{HERO_CONTENT.ctaSecondary}</span>
-              </button>
             </motion.div>
 
             {/* Trust Badges: In a single row on lg: (1024px+) with flex-nowrap and gap-3, 2 rows on mobile. Texto mínimo 12px */}

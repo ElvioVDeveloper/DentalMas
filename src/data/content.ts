@@ -94,7 +94,6 @@ export const HERO_CONTENT = {
   subtitle:
     "Odontología moderna, suave e integral para ti y toda tu familia en el centro de Encarnación. Diagnósticos digitales de precisión sin dolor.",
   ctaPrimary: "Reservar turno",
-  ctaSecondary: "Ver clínica",
   bgImage: "/images/hero-bg.jpg",
   trustBadges: [
     {
