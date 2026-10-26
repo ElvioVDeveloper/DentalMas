@@ -62,8 +62,7 @@ export const CLINIC_INFO = {
   mapEmbedUrl: "https://www.google.com/maps?q=Juan+Le%C3%B3n+Mallorqu%C3%ADn+y+25+de+Mayo,+Encarnaci%C3%B3n,+Paraguay&output=embed",
   socials: {
     instagram: "https://instagram.com/dentalmas.py",
-    // TODO: reemplazar por dato real
-    facebook: "https://facebook.com/dentalmas",
+    facebook: "https://www.facebook.com/dentalmas.py/",
     whatsapp: `https://wa.me/${WHATSAPP_NUMBER}`,
   },
 };
