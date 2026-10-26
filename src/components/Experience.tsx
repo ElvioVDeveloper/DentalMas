@@ -1,13 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { EXPERIENCE_CONTENT } from "../data/content";
 import FadeUp from "./FadeUp";
 
-interface ExperienceProps {
-  onOpenFacilitiesModal?: () => void;
-}
-
-export default function Experience({ onOpenFacilitiesModal }: ExperienceProps) {
+export default function Experience() {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
@@ -77,16 +73,6 @@ export default function Experience({ onOpenFacilitiesModal }: ExperienceProps) {
                 <p className="text-sm sm:text-[15px] text-slate-700 leading-relaxed font-normal">
                   {EXPERIENCE_CONTENT.description}
                 </p>
-              </div>
-              <div className="pt-6 sm:pt-8">
-                <button
-                  type="button"
-                  onClick={onOpenFacilitiesModal}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0B2A4A] hover:bg-[#2BA89A] text-white text-xs font-bold transition-all shadow-sm active:scale-98"
-                >
-                  <span>{EXPERIENCE_CONTENT.ctaText}</span>
-                  <ArrowRight className="w-3.5 h-3.5 stroke-[2]" />
-                </button>
               </div>
             </div>
           </FadeUp>

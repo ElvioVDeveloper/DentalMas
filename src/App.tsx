@@ -29,7 +29,7 @@ export default function App() {
         <Services />
 
         {/* 4. Experience / Nosotros & Testimonios */}
-        <Experience onOpenFacilitiesModal={() => setFacilitiesModalOpen(true)} />
+        <Experience />
 
         {/* 5. Statistics Bar */}
         <Stats />

@@ -202,7 +202,6 @@ export const EXPERIENCE_CONTENT = {
   title: "Atención moderna • Trato humano.",
   description:
     "Combinamos tecnología diagnóstica de última generación con una cálida empatía médica para que cada visita sea completamente cómoda, transparente y libre de estrés.",
-  ctaText: "Conocer instalaciones",
   clinicImage: "/images/clinic-reception.jpg",
   badgeTitle: "Instalaciones en Encarnación",
   badgeSubtitle: "Salas climatizadas diseñadas para tu calma y bienestar.",
