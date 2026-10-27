@@ -56,10 +56,9 @@ export const CLINIC_INFO = {
   },
   // TODO: reemplazar por dato real
   registration: "Habilitación MSPyBS N° 124/2022",
-  // TODO: reemplazar por dato real
-  googleMapsUrl: "https://maps.google.com/?q=Juan+Le%C3%B3n+Mallorqu%C3%ADn+y+25+de+Mayo,+Encarnaci%C3%B3n,+Paraguay",
+  googleMapsUrl: "https://maps.app.goo.gl/oXeXxE5un1BciJdq8",
   // Enlace oficial embed para el iframe
-  mapEmbedUrl: "https://www.google.com/maps?q=Juan+Le%C3%B3n+Mallorqu%C3%ADn+y+25+de+Mayo,+Encarnaci%C3%B3n,+Paraguay&output=embed",
+  mapEmbedUrl: "https://www.google.com/maps?q=Dentalm%C3%A1s+Cl%C3%ADnica+Odontol%C3%B3gica,+Juan+Le%C3%B3n+Mallorqu%C3%ADn+y+25+de+Mayo,+Encarnaci%C3%B3n,+Paraguay&output=embed",
   socials: {
     instagram: "https://instagram.com/dentalmas.py",
     facebook: "https://www.facebook.com/dentalmas.py/",
